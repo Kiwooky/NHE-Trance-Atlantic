@@ -1,0 +1,25 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic>
+    a lv2:Plugin , lv2:ReverbPlugin ;
+    lv2:binary <nhe-trance-atlantic_dsp.so> ;
+    rdfs:seeAlso <nhe-trance-atlantic.ttl> , <modgui.ttl> .
+
+# Factory presets
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-trance-atlantic>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-choral-reef>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-deep-sea-detune>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:seeAlso <presets.ttl> .
+

@@ -1,0 +1,94 @@
+/* Trance Atlantic - New Horizon Electronics (650 x 400 CSS px). Artwork by Niels.
+   Images are 2x and drawn at their 1x size with background-size; layout in 1x px,
+   fitted to the approved mockup. */
+.tranceatl{{{cns}}} {
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    background-image: url(/resources/background.jpg{{{ns}}});
+    background-size: 650px 400px;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+/* orb */
+.tranceatl{{{cns}}} .ta-orb { position: absolute; left: 437.5px; top: 78px; width: 170px; height: 170px; z-index: 18; pointer-events: none; }
+.tranceatl{{{cns}}} .ta-orb-layer { position: absolute; left: 0; top: 0; width: 170px; height: 170px; background-size: 170px 170px; background-repeat: no-repeat; opacity: 0; transition: opacity .12s linear; }
+.tranceatl{{{cns}}} .ta-orb1 { background-image: url(/resources/orb1.png{{{ns}}}); opacity: 1; }
+.tranceatl{{{cns}}} .ta-orb2 { background-image: url(/resources/orb2.png{{{ns}}}); }
+.tranceatl{{{cns}}} .ta-orb3 { background-image: url(/resources/orb3.png{{{ns}}}); }
+.tranceatl{{{cns}}} .ta-orb4 { background-image: url(/resources/orb4.png{{{ns}}}); }
+.tranceatl{{{cns}}} .ta-orb5 { background-image: url(/resources/orb5.png{{{ns}}}); }
+
+/* knobs: 59x59 frames, 128 frames in one horizontal 2x strip */
+.tranceatl{{{cns}}} .ta-knob {
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    background-image: url(/resources/knob.png{{{ns}}});
+    background-size: auto 59px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    z-index: 21;
+}
+.tranceatl{{{cns}}} .ta-throat  { left: 221px;   top: 22px; }
+.tranceatl{{{cns}}} .ta-sense   { left: 368px;   top: 22.5px; }
+.tranceatl{{{cns}}} .ta-song    { left: 101.5px; top: 276.5px; }
+.tranceatl{{{cns}}} .ta-swim    { left: 174.5px; top: 276.5px; }
+.tranceatl{{{cns}}} .ta-depth   { left: 418.5px; top: 276.5px; }
+.tranceatl{{{cns}}} .ta-scatter { left: 493.5px; top: 276.5px; }
+.tranceatl{{{cns}}} .ta-blend   { left: 567.5px; top: 276.5px; }
+
+/* small status lights */
+.tranceatl{{{cns}}} .ta-sled { position: absolute; width: 11px; height: 11px; background-image: url(/resources/sled-off.png{{{ns}}}); background-size: 11px 11px; z-index: 20; }
+.tranceatl{{{cns}}} .ta-sled.on { background-image: url(/resources/sled-on.png{{{ns}}}); }
+.tranceatl{{{cns}}} .ta-sled-throat { left: 244.85px; top: 99.25px; }
+.tranceatl{{{cns}}} .ta-sled-sense  { left: 393px;    top: 99.5px; }
+.tranceatl{{{cns}}} .ta-sled-song   { left: 125.5px;  top: 359px; }
+.tranceatl{{{cns}}} .ta-sled-swim   { left: 199px;    top: 359px; }
+
+/* Travel / Mode buttons */
+.tranceatl{{{cns}}} .ta-btn { position: absolute; left: 309px; width: 29.5px; height: 32px; background-image: url(/resources/button.png{{{ns}}}); background-size: 29.5px 32px; cursor: pointer; z-index: 22; }
+.tranceatl{{{cns}}} .ta-btn.down { background-image: url(/resources/button-down.png{{{ns}}}); }
+.tranceatl{{{cns}}} .ta-btn-travel { top: 21.75px; }
+.tranceatl{{{cns}}} .ta-btn-mode   { top: 81.75px; }
+
+/* dot-matrix readouts: 43x43 frames, pre-rendered in the DotMatrix font (2x strips) */
+.tranceatl{{{cns}}} .ta-lens {
+    position: absolute; width: 43px; height: 43px;
+    background-image: url(/resources/lens-on.png{{{ns}}}); background-size: 43px 43px;
+    z-index: 20; pointer-events: none;
+}
+.tranceatl{{{cns}}} .ta-text { position: absolute; left: 0; top: 0; width: 43px; height: 43px; background-repeat: no-repeat; background-position: 0 0; }
+.tranceatl{{{cns}}} .ta-lens-mode .ta-text { background-image: url(/resources/readout-mode.png{{{ns}}}); background-size: 129px 43px; }
+.tranceatl{{{cns}}} .ta-lens-song .ta-text { background-image: url(/resources/readout-song.png{{{ns}}}); background-size: 1075px 43px; }
+.tranceatl{{{cns}}} .ta-lens.dim { background-image: url(/resources/lens-off.png{{{ns}}}); }
+.tranceatl{{{cns}}} .ta-lens.dim .ta-text { opacity: .35; }
+.tranceatl{{{cns}}} .ta-lens-mode { left: 303.5px; top: 137.5px; }
+.tranceatl{{{cns}}} .ta-lens-song { left: 109px;   top: 221.5px; }
+
+/* 25x25 lights */
+.tranceatl{{{cns}}} .ta-led { position: absolute; width: 25px; height: 25px; background-image: url(/resources/led-off.png{{{ns}}}); background-size: 25px 25px; z-index: 21; }
+.tranceatl{{{cns}}} .ta-tled { left: 43.5px; cursor: pointer; }
+.tranceatl{{{cns}}} .ta-tled.on { background-image: url(/resources/led-on.png{{{ns}}}); }
+.tranceatl{{{cns}}} .ta-tled-up   { top: 224.5px; }
+.tranceatl{{{cns}}} .ta-tled-arc  { top: 266.5px; }
+.tranceatl{{{cns}}} .ta-tled-down { top: 309.5px; }
+
+/* Tails: switch widget with an [off | on] 2x strip */
+.tranceatl{{{cns}}} .ta-tails { position: absolute; left: 311.5px; top: 224.5px; width: 25px; height: 25px; background-image: url(/resources/tails.png{{{ns}}}); background-size: 50px 25px; background-repeat: no-repeat; cursor: pointer; z-index: 21; }
+.tranceatl{{{cns}}} .ta-tails.off { background-position: 0 0; }
+.tranceatl{{{cns}}} .ta-tails.on  { background-position: -25px 0; }
+
+/* On/Off light follows bypass ("on" = lit = effect on) */
+.tranceatl{{{cns}}} .ta-onoff { left: 312.5px; top: 272.5px; }
+.tranceatl{{{cns}}} .ta-onoff.on { background-image: url(/resources/led-on.png{{{ns}}}); }
+
+/* footswitch (bypass); shows the pressed art while held */
+.tranceatl{{{cns}}} .ta-fs { position: absolute; left: 285.1px; top: 308.8px; width: 79.1px; height: 79.1px; background-image: url(/resources/footswitch.png{{{ns}}}); background-size: 79.1px 79.1px; cursor: pointer; z-index: 21; }
+.tranceatl{{{cns}}} .ta-fs-down { position: absolute; left: 0; top: 0; width: 79.1px; height: 79.1px; background-image: url(/resources/footswitch-down.png{{{ns}}}); background-size: 79.1px 79.1px; display: none; pointer-events: none; }
+.tranceatl{{{cns}}} .ta-fs:active .ta-fs-down { display: block; }
+
+.tranceatl{{{cns}}} .mod-pedal-input,
+.tranceatl{{{cns}}} .mod-pedal-output { top: 150px; }

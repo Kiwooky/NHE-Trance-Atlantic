@@ -1,0 +1,21 @@
+# Path B: run the playbook's gate on every push and pull request.
+# Expects the playbook's tools/ folder copied into this repo as tools/.
+# (Written for the playbook; check the first run's log on GitHub.)
+name: check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+            submodules: recursive
+      - name: Toolchains
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++ g++-arm-linux-gnueabihf g++-aarch64-linux-gnu qemu-user lilv-utils
+          pip install numpy scipy rdflib
+      - name: Gate
+        run: tools/check.sh --src plugins/simple-echo --bundle bundle/simple-echo.lv2 --test tests/test_simple_echo.py
+      - name: Repo build
+        run: make NOOPT=true

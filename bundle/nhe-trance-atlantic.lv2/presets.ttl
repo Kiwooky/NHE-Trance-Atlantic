@@ -1,0 +1,48 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
+@prefix pset: <http://lv2plug.in/ns/ext/presets#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-trance-atlantic>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Trance Atlantic" ;
+    lv2:port [ lv2:symbol "sense" ; pset:value 50 ] ,
+        [ lv2:symbol "song" ; pset:value 5 ] ,
+        [ lv2:symbol "swim" ; pset:value 250 ] ,
+        [ lv2:symbol "depth" ; pset:value 35.83 ] ,
+        [ lv2:symbol "scatter" ; pset:value 80.71 ] ,
+        [ lv2:symbol "throat" ; pset:value 50 ] ,
+        [ lv2:symbol "blend" ; pset:value 76.77 ] ,
+        [ lv2:symbol "travel" ; pset:value 2 ] ,
+        [ lv2:symbol "mode" ; pset:value 2 ] ,
+        [ lv2:symbol "tails" ; pset:value 1 ] .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-choral-reef>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Choral Reef" ;
+    lv2:port [ lv2:symbol "sense" ; pset:value 50 ] ,
+        [ lv2:symbol "song" ; pset:value 5 ] ,
+        [ lv2:symbol "swim" ; pset:value 250 ] ,
+        [ lv2:symbol "depth" ; pset:value 44.29 ] ,
+        [ lv2:symbol "scatter" ; pset:value 28.15 ] ,
+        [ lv2:symbol "throat" ; pset:value 50 ] ,
+        [ lv2:symbol "blend" ; pset:value 30.31 ] ,
+        [ lv2:symbol "travel" ; pset:value 2 ] ,
+        [ lv2:symbol "mode" ; pset:value 2 ] ,
+        [ lv2:symbol "tails" ; pset:value 1 ] .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-deep-sea-detune>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Deep sea detune" ;
+    lv2:port [ lv2:symbol "sense" ; pset:value 49.21 ] ,
+        [ lv2:symbol "song" ; pset:value 6 ] ,
+        [ lv2:symbol "swim" ; pset:value 742.62 ] ,
+        [ lv2:symbol "depth" ; pset:value 53.15 ] ,
+        [ lv2:symbol "scatter" ; pset:value 56.5 ] ,
+        [ lv2:symbol "throat" ; pset:value 100 ] ,
+        [ lv2:symbol "blend" ; pset:value 75.39 ] ,
+        [ lv2:symbol "travel" ; pset:value 1 ] ,
+        [ lv2:symbol "mode" ; pset:value 2 ] ,
+        [ lv2:symbol "tails" ; pset:value 1 ] .

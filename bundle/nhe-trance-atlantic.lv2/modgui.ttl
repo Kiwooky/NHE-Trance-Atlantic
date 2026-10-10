@@ -1,0 +1,26 @@
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-trance-atlantic.html> ;
+        modgui:stylesheet <modgui/stylesheet-trance-atlantic.css> ;
+        modgui:javascript <modgui/script-trance-atlantic.js> ;
+        modgui:screenshot <modgui/screenshot-trance-atlantic.png> ;
+        modgui:thumbnail <modgui/thumbnail-trance-atlantic.png> ;
+        modgui:brand "New Horizon" ;
+        modgui:label "Trance Atlantic" ;
+        modgui:monitoredOutputs [ lv2:symbol "input_level" ] ;
+        modgui:port
+        [ lv2:index 0 ; lv2:symbol "sense" ;   lv2:name "Sense" ; ],
+        [ lv2:index 1 ; lv2:symbol "song" ;    lv2:name "Song" ; ],
+        [ lv2:index 2 ; lv2:symbol "swim" ;    lv2:name "Swim" ; ],
+        [ lv2:index 3 ; lv2:symbol "depth" ;   lv2:name "Depth" ; ],
+        [ lv2:index 4 ; lv2:symbol "scatter" ; lv2:name "Scatter" ; ],
+        [ lv2:index 5 ; lv2:symbol "throat" ;  lv2:name "Throat" ; ],
+        [ lv2:index 6 ; lv2:symbol "blend" ;   lv2:name "Blend" ; ],
+        [ lv2:index 7 ; lv2:symbol "travel" ;  lv2:name "Travel" ; ],
+        [ lv2:index 8 ; lv2:symbol "mode" ;    lv2:name "Mode" ; ],
+        [ lv2:index 9 ; lv2:symbol "tails" ;   lv2:name "Tails" ; ] ;
+    ] .

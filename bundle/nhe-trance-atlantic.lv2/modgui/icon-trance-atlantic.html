@@ -1,0 +1,59 @@
+<div class="mod-pedal tranceatl{{{cns}}}">
+    <div mod-role="drag-handle" class="mod-drag-handle"></div>
+
+    <!-- the orb: 1 at the bottom, 5 on top; the face script sets each layer's opacity -->
+    <div class="ta-orb">
+        <div class="ta-orb-layer ta-orb1"></div>
+        <div class="ta-orb-layer ta-orb2"></div>
+        <div class="ta-orb-layer ta-orb3"></div>
+        <div class="ta-orb-layer ta-orb4"></div>
+        <div class="ta-orb-layer ta-orb5"></div>
+    </div>
+
+    <!-- knobs: 128-frame strip -->
+    <div class="ta-knob ta-throat"  title="Throat (12 o'clock = centre; left for bass)" mod-role="input-control-port" mod-port-symbol="throat"></div>
+    <div class="ta-knob ta-sense"   title="Sense"   mod-role="input-control-port" mod-port-symbol="sense"></div>
+    <div class="ta-knob ta-song"    title="Song"    mod-role="input-control-port" mod-port-symbol="song"></div>
+    <div class="ta-knob ta-swim"    title="Swim"    mod-role="input-control-port" mod-port-symbol="swim"></div>
+    <div class="ta-knob ta-depth"   title="Depth"   mod-role="input-control-port" mod-port-symbol="depth"></div>
+    <div class="ta-knob ta-scatter" title="Scatter" mod-role="input-control-port" mod-port-symbol="scatter"></div>
+    <div class="ta-knob ta-blend"   title="Blend"   mod-role="input-control-port" mod-port-symbol="blend"></div>
+
+    <!-- status lights: lit when the control is doing something (dark in Mode OFF) -->
+    <div class="ta-sled ta-sled-throat"></div>
+    <div class="ta-sled ta-sled-sense"></div>
+    <div class="ta-sled ta-sled-song"></div>
+    <div class="ta-sled ta-sled-swim"></div>
+
+    <!-- Travel and Mode: script-driven buttons that step their setting -->
+    <div class="ta-btn ta-btn-travel" title="Travel: Up, Arc, Down" ta-step="travel"></div>
+    <div class="ta-btn ta-btn-mode"   title="Mode: Off, Fix, Env"   ta-step="mode"></div>
+
+    <!-- dot-matrix readouts: pre-rendered image strips (no web font), frame picked by the face script -->
+    <div class="ta-lens ta-lens-mode"><div class="ta-text"></div></div>
+    <div class="ta-lens ta-lens-song"><div class="ta-text"></div></div>
+
+    <!-- Travel lights: click one to pick it -->
+    <div class="ta-led ta-tled ta-tled-up"   title="Travel: Up"   ta-pick="travel" data-value="0"></div>
+    <div class="ta-led ta-tled ta-tled-arc"  title="Travel: Arc"  ta-pick="travel" data-value="2"></div>
+    <div class="ta-led ta-tled ta-tled-down" title="Travel: Down" ta-pick="travel" data-value="1"></div>
+
+    <div class="ta-tails" title="Tails: the ocean rings out in bypass" mod-widget="switch" mod-role="input-control-port" mod-port-symbol="tails"></div>
+    <div class="ta-led ta-onoff" mod-role="bypass-light"></div>
+    <div class="ta-fs" title="On/Off" mod-role="bypass"><div class="ta-fs-down"></div></div>
+
+    <div class="mod-pedal-input">
+        {{#effect.ports.audio.input}}
+        <div class="mod-input mod-input-disconnected" title="{{name}}" mod-role="input-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-input-image"></div>
+        </div>
+        {{/effect.ports.audio.input}}
+    </div>
+    <div class="mod-pedal-output">
+        {{#effect.ports.audio.output}}
+        <div class="mod-output mod-output-disconnected" title="{{name}}" mod-role="output-audio-port" mod-port-symbol="{{symbol}}">
+            <div class="mod-pedal-output-image"></div>
+        </div>
+        {{/effect.ports.audio.output}}
+    </div>
+</div>

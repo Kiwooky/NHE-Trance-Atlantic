@@ -2,6 +2,10 @@
 
 Versions are MOD's plugin versions (lv2:minorVersion.microVersion).
 
+## 2.6 (2026-10-16)
+
+- Pedal face: the orb layers stay on their own GPU layers, so the ripples no longer make the whole face flicker in brightness.
+
 ## 2.5 (2026-10-10): first repository release
 
 - Three factory presets: Trance Atlantic (the default settings), Choral Reef, Deep sea detune.

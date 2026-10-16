@@ -13,7 +13,11 @@
 
 /* orb */
 .tranceatl{{{cns}}} .ta-orb { position: absolute; left: 437.5px; top: 78px; width: 170px; height: 170px; z-index: 18; pointer-events: none; }
-.tranceatl{{{cns}}} .ta-orb-layer { position: absolute; left: 0; top: 0; width: 170px; height: 170px; background-size: 170px 170px; background-repeat: no-repeat; opacity: 0; transition: opacity .12s linear; }
+/* Each layer stays on its own compositor layer for good (will-change, hidden backface). Without
+   that, the browser promotes a layer while it fades and drops it after, repainting the face
+   underneath each time, which reads as the whole pedal flickering with the ripples. */
+.tranceatl{{{cns}}} .ta-orb-layer { position: absolute; left: 0; top: 0; width: 170px; height: 170px; background-size: 170px 170px; background-repeat: no-repeat; opacity: 0; transition: opacity .12s linear;
+    will-change: opacity; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
 .tranceatl{{{cns}}} .ta-orb1 { background-image: url(/resources/orb1.png{{{ns}}}); opacity: 1; }
 .tranceatl{{{cns}}} .ta-orb2 { background-image: url(/resources/orb2.png{{{ns}}}); }
 .tranceatl{{{cns}}} .ta-orb3 { background-image: url(/resources/orb3.png{{{ns}}}); }

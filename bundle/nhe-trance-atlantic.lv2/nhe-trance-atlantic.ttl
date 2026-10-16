@@ -13,7 +13,7 @@
     doap:maintainer [ foaf:name "New Horizon Electronics" ; foaf:homepage <https://github.com/Kiwooky/NHE-Trance-Atlantic> ] ;
     rdfs:comment "Envelope whale call: a singing auto-wah with a pitch swoop, sent out to sea and blended with the dry." ;
     lv2:minorVersion 2 ;
-    lv2:microVersion 5 ;
+    lv2:microVersion 6 ;
     lv2:optionalFeature lv2:hardRTCapable ;
     lv2:requiredFeature <http://lv2plug.in/ns/ext/options#options> ,
                         <http://lv2plug.in/ns/ext/urid#map> ;

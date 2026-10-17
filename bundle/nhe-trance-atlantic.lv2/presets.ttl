@@ -46,3 +46,78 @@
         [ lv2:symbol "travel" ; pset:value 1 ] ,
         [ lv2:symbol "mode" ; pset:value 2 ] ,
         [ lv2:symbol "tails" ; pset:value 1 ] .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-a-million-miles>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "A Million Miles" ;
+    lv2:port [ lv2:symbol "sense" ; pset:value 60.43 ] ,
+        [ lv2:symbol "song" ; pset:value 12 ] ,
+        [ lv2:symbol "swim" ; pset:value 2000 ] ,
+        [ lv2:symbol "depth" ; pset:value 44.49 ] ,
+        [ lv2:symbol "scatter" ; pset:value 38.78 ] ,
+        [ lv2:symbol "throat" ; pset:value 27.36 ] ,
+        [ lv2:symbol "blend" ; pset:value 61.81 ] ,
+        [ lv2:symbol "travel" ; pset:value 1 ] ,
+        [ lv2:symbol "mode" ; pset:value 2 ] ,
+        [ lv2:symbol "tails" ; pset:value 1 ] .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-whale-call>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Whale Call" ;
+    lv2:port [ lv2:symbol "sense" ; pset:value 50 ] ,
+        [ lv2:symbol "song" ; pset:value 12 ] ,
+        [ lv2:symbol "swim" ; pset:value 1498.09 ] ,
+        [ lv2:symbol "depth" ; pset:value 35.83 ] ,
+        [ lv2:symbol "scatter" ; pset:value 80.71 ] ,
+        [ lv2:symbol "throat" ; pset:value 59.25 ] ,
+        [ lv2:symbol "blend" ; pset:value 76.77 ] ,
+        [ lv2:symbol "travel" ; pset:value 1 ] ,
+        [ lv2:symbol "mode" ; pset:value 2 ] ,
+        [ lv2:symbol "tails" ; pset:value 1 ] .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-just-drifting-aimlessly>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Just drifting aimlessly" ;
+    lv2:port [ lv2:symbol "sense" ; pset:value 50.67 ] ,
+        [ lv2:symbol "song" ; pset:value 12 ] ,
+        [ lv2:symbol "swim" ; pset:value 250 ] ,
+        [ lv2:symbol "depth" ; pset:value 100 ] ,
+        [ lv2:symbol "scatter" ; pset:value 0 ] ,
+        [ lv2:symbol "throat" ; pset:value 50 ] ,
+        [ lv2:symbol "blend" ; pset:value 100 ] ,
+        [ lv2:symbol "travel" ; pset:value 1 ] ,
+        [ lv2:symbol "mode" ; pset:value 0 ] ,
+        [ lv2:symbol "tails" ; pset:value 1 ] .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-converging-streams>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Converging streams" ;
+    lv2:port [ lv2:symbol "sense" ; pset:value 60.43 ] ,
+        [ lv2:symbol "song" ; pset:value 2 ] ,
+        [ lv2:symbol "swim" ; pset:value 2000 ] ,
+        [ lv2:symbol "depth" ; pset:value 0 ] ,
+        [ lv2:symbol "scatter" ; pset:value 0 ] ,
+        [ lv2:symbol "throat" ; pset:value 46.85 ] ,
+        [ lv2:symbol "blend" ; pset:value 36.42 ] ,
+        [ lv2:symbol "travel" ; pset:value 1 ] ,
+        [ lv2:symbol "mode" ; pset:value 2 ] ,
+        [ lv2:symbol "tails" ; pset:value 1 ] .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-bouncing-of-the-floor>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Bouncing of the Floor" ;
+    lv2:port [ lv2:symbol "sense" ; pset:value 60.43 ] ,
+        [ lv2:symbol "song" ; pset:value 2 ] ,
+        [ lv2:symbol "swim" ; pset:value 2000 ] ,
+        [ lv2:symbol "depth" ; pset:value 100 ] ,
+        [ lv2:symbol "scatter" ; pset:value 100 ] ,
+        [ lv2:symbol "throat" ; pset:value 46.85 ] ,
+        [ lv2:symbol "blend" ; pset:value 60.04 ] ,
+        [ lv2:symbol "travel" ; pset:value 1 ] ,
+        [ lv2:symbol "mode" ; pset:value 2 ] ,
+        [ lv2:symbol "tails" ; pset:value 1 ] .

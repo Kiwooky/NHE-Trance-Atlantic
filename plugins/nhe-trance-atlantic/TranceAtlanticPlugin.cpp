@@ -154,7 +154,7 @@ protected:
     const char* getMaker()       const override { return "New Horizon Electronics"; }
     const char* getHomePage()    const override { return "https://github.com/Kiwooky/NHE-Trance-Atlantic"; }
     const char* getLicense()     const override { return "GPL-3.0-or-later"; }
-    uint32_t    getVersion()     const override { return d_version(1, 0, 6); }   // = lv2:minorVersion 2, microVersion 6
+    uint32_t    getVersion()     const override { return d_version(1, 0, 7); }   // = lv2:minorVersion 2, microVersion 7
     int64_t     getUniqueId()    const override { return d_cconst('T', 'r', 'A', 't'); }
 
     void initParameter(uint32_t index, Parameter& p) override

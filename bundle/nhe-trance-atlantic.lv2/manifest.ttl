@@ -23,3 +23,27 @@
     lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
     rdfs:seeAlso <presets.ttl> .
 
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-a-million-miles>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-whale-call>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-just-drifting-aimlessly>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-converging-streams>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:seeAlso <presets.ttl> .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-bouncing-of-the-floor>
+    a pset:Preset ;
+    lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:seeAlso <presets.ttl> .

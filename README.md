@@ -51,6 +51,11 @@ Mono in, stereo out. The image is narrow on purpose, so it collapses to mono wel
 | **Trance Atlantic** | The default: a far, scattered call with plenty of ocean |
 | **Choral Reef** | Close and clear: more of you, a light call |
 | **Deep sea detune** | A slow dive with the throat up high and the sea washing over it |
+| **A Million Miles** | An octave dive on every note, slow and far, with the throat down low |
+| **Whale Call** | The classic: an octave dive into a deep, scattered sea |
+| **Just drifting aimlessly** | No envelope, all ocean: the call only, at full depth, crystal clear |
+| **Converging streams** | Close and dry-led: a gentle two-semitone sag that never quite leaves you |
+| **Bouncing of the Floor** | The same sag, sent to the deepest, most scattered water |
 
 ## Install
 

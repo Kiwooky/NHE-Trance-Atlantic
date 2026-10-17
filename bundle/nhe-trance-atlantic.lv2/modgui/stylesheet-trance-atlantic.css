@@ -89,10 +89,10 @@
 .tranceatl{{{cns}}} .ta-onoff { left: 312.5px; top: 272.5px; }
 .tranceatl{{{cns}}} .ta-onoff.on { background-image: url(/resources/led-on.png{{{ns}}}); }
 
-/* footswitch (bypass); shows the pressed art while held */
+/* footswitch (bypass), latching: the rest art while the effect runs, the pressed art while bypassed.
+   mod-ui's bypass widget sets the classes inverted: .on = bypassed, .off = effect on */
 .tranceatl{{{cns}}} .ta-fs { position: absolute; left: 285.1px; top: 308.8px; width: 79.1px; height: 79.1px; background-image: url(/resources/footswitch.png{{{ns}}}); background-size: 79.1px 79.1px; cursor: pointer; z-index: 21; }
-.tranceatl{{{cns}}} .ta-fs-down { position: absolute; left: 0; top: 0; width: 79.1px; height: 79.1px; background-image: url(/resources/footswitch-down.png{{{ns}}}); background-size: 79.1px 79.1px; display: none; pointer-events: none; }
-.tranceatl{{{cns}}} .ta-fs:active .ta-fs-down { display: block; }
+.tranceatl{{{cns}}} .ta-fs.on { background-image: url(/resources/footswitch-down.png{{{ns}}}); }
 
 .tranceatl{{{cns}}} .mod-pedal-input,
 .tranceatl{{{cns}}} .mod-pedal-output { top: 150px; }

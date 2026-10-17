@@ -14,19 +14,32 @@
 // Control ports, in TTL order (indices start after the audio ports).
 // The bypass port is always last.
 enum Parameters {
+    // Envelope
     kSense = 0,
-    kSong,
     kSwim,
+    kThroat,
+    kMode,
+    // Pitch
+    kSong,
+    kTravel,
+    // Reverb
     kDepth,
     kScatter,
-    kThroat,
+    // Mix
     kBlend,
-    kTravel,
-    kMode,
     kTails,
     kInputLevel,
     kBypass,
     kParameterCount
+};
+
+// Port groups, in the order MOD lists them (the TTL gives each its lv2:index).
+enum PortGroups {
+    kGroupEnvelope = 0,
+    kGroupPitch,
+    kGroupReverb,
+    kGroupMix,
+    kGroupCount
 };
 
 #endif

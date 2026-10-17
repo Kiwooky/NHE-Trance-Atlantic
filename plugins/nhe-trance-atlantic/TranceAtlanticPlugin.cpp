@@ -225,6 +225,18 @@ protected:
             p.initDesignation(kParameterDesignationBypass);
             break;
         }
+        // groups: the settings panel lists Envelope, Pitch, Reverb, Mix
+        if (index <= kMode)       p.groupId = kGroupEnvelope;
+        else if (index <= kTravel) p.groupId = kGroupPitch;
+        else if (index <= kScatter) p.groupId = kGroupReverb;
+        else if (index <= kTails)  p.groupId = kGroupMix;
+    }
+
+    void initPortGroup(uint32_t groupId, PortGroup& g) override
+    {
+        static const char* const names[kGroupCount]   = { "Envelope", "Pitch", "Reverb", "Mix" };
+        static const char* const symbols[kGroupCount] = { "envelope", "pitch", "reverb", "mix" };
+        if (groupId < kGroupCount) { g.name = names[groupId]; g.symbol = symbols[groupId]; }
     }
 
     float getParameterValue(uint32_t i) const override { return i < kParameterCount ? fParams[i] : 0.0f; }

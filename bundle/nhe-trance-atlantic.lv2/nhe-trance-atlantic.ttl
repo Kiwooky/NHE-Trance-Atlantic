@@ -1,6 +1,7 @@
 @prefix doap:   <http://usefulinc.com/ns/doap#> .
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+@prefix pg:     <http://lv2plug.in/ns/ext/port-groups#> .
 @prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
@@ -31,6 +32,7 @@
         a lv2:InputPort , lv2:ControlPort ;
         lv2:index 3 ;
         lv2:symbol "sense" ;
+        pg:group <https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_envelope> ;
         lv2:name "Sense" ;
         lv2:default 50 ;
         lv2:minimum 0 ;
@@ -39,7 +41,42 @@
     ] , [
         a lv2:InputPort , lv2:ControlPort ;
         lv2:index 4 ;
+        lv2:symbol "swim" ;
+        pg:group <https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_envelope> ;
+        lv2:name "Swim" ;
+        lv2:default 250 ;
+        lv2:minimum 100 ;
+        lv2:maximum 2000 ;
+        lv2:portProperty pprops:logarithmic ;
+        units:unit units:ms
+    ] , [
+        a lv2:InputPort , lv2:ControlPort ;
+        lv2:index 5 ;
+        lv2:symbol "throat" ;
+        pg:group <https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_envelope> ;
+        lv2:name "Throat" ;
+        lv2:default 50 ;
+        lv2:minimum 0 ;
+        lv2:maximum 100 ;
+        units:unit units:pc
+    ] , [
+        a lv2:InputPort , lv2:ControlPort ;
+        lv2:index 6 ;
+        lv2:symbol "mode" ;
+        pg:group <https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_envelope> ;
+        lv2:name "Mode" ;
+        lv2:default 2 ;
+        lv2:minimum 0 ;
+        lv2:maximum 2 ;
+        lv2:portProperty lv2:integer , lv2:enumeration ;
+        lv2:scalePoint [ rdfs:label "Off" ; rdf:value 0 ] ,
+                       [ rdfs:label "Fix" ; rdf:value 1 ] ,
+                       [ rdfs:label "Env" ; rdf:value 2 ]
+    ] , [
+        a lv2:InputPort , lv2:ControlPort ;
+        lv2:index 7 ;
         lv2:symbol "song" ;
+        pg:group <https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_pitch> ;
         lv2:name "Song" ;
         lv2:default 5 ;
         lv2:minimum 0 ;
@@ -53,54 +90,9 @@
         ]
     ] , [
         a lv2:InputPort , lv2:ControlPort ;
-        lv2:index 5 ;
-        lv2:symbol "swim" ;
-        lv2:name "Swim" ;
-        lv2:default 250 ;
-        lv2:minimum 100 ;
-        lv2:maximum 2000 ;
-        lv2:portProperty pprops:logarithmic ;
-        units:unit units:ms
-    ] , [
-        a lv2:InputPort , lv2:ControlPort ;
-        lv2:index 6 ;
-        lv2:symbol "depth" ;
-        lv2:name "Depth" ;
-        lv2:default 35.83 ;
-        lv2:minimum 0 ;
-        lv2:maximum 100 ;
-        units:unit units:pc
-    ] , [
-        a lv2:InputPort , lv2:ControlPort ;
-        lv2:index 7 ;
-        lv2:symbol "scatter" ;
-        lv2:name "Scatter" ;
-        lv2:default 80.71 ;
-        lv2:minimum 0 ;
-        lv2:maximum 100 ;
-        units:unit units:pc
-    ] , [
-        a lv2:InputPort , lv2:ControlPort ;
         lv2:index 8 ;
-        lv2:symbol "throat" ;
-        lv2:name "Throat" ;
-        lv2:default 50 ;
-        lv2:minimum 0 ;
-        lv2:maximum 100 ;
-        units:unit units:pc
-    ] , [
-        a lv2:InputPort , lv2:ControlPort ;
-        lv2:index 9 ;
-        lv2:symbol "blend" ;
-        lv2:name "Blend" ;
-        lv2:default 76.77 ;
-        lv2:minimum 0 ;
-        lv2:maximum 100 ;
-        units:unit units:pc
-    ] , [
-        a lv2:InputPort , lv2:ControlPort ;
-        lv2:index 10 ;
         lv2:symbol "travel" ;
+        pg:group <https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_pitch> ;
         lv2:name "Travel" ;
         lv2:default 2 ;
         lv2:minimum 0 ;
@@ -111,20 +103,39 @@
                        [ rdfs:label "Arc" ; rdf:value 2 ]
     ] , [
         a lv2:InputPort , lv2:ControlPort ;
-        lv2:index 11 ;
-        lv2:symbol "mode" ;
-        lv2:name "Mode" ;
-        lv2:default 2 ;
+        lv2:index 9 ;
+        lv2:symbol "depth" ;
+        pg:group <https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_reverb> ;
+        lv2:name "Depth" ;
+        lv2:default 35.83 ;
         lv2:minimum 0 ;
-        lv2:maximum 2 ;
-        lv2:portProperty lv2:integer , lv2:enumeration ;
-        lv2:scalePoint [ rdfs:label "Off" ; rdf:value 0 ] ,
-                       [ rdfs:label "Fix" ; rdf:value 1 ] ,
-                       [ rdfs:label "Env" ; rdf:value 2 ]
+        lv2:maximum 100 ;
+        units:unit units:pc
+    ] , [
+        a lv2:InputPort , lv2:ControlPort ;
+        lv2:index 10 ;
+        lv2:symbol "scatter" ;
+        pg:group <https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_reverb> ;
+        lv2:name "Scatter" ;
+        lv2:default 80.71 ;
+        lv2:minimum 0 ;
+        lv2:maximum 100 ;
+        units:unit units:pc
+    ] , [
+        a lv2:InputPort , lv2:ControlPort ;
+        lv2:index 11 ;
+        lv2:symbol "blend" ;
+        pg:group <https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_mix> ;
+        lv2:name "Blend" ;
+        lv2:default 76.77 ;
+        lv2:minimum 0 ;
+        lv2:maximum 100 ;
+        units:unit units:pc
     ] , [
         a lv2:InputPort , lv2:ControlPort ;
         lv2:index 12 ;
         lv2:symbol "tails" ;
+        pg:group <https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_mix> ;
         lv2:name "Tails" ;
         lv2:default 1 ;
         lv2:minimum 0 ;
@@ -148,3 +159,30 @@
         lv2:portProperty lv2:integer , lv2:toggled ;
         lv2:designation lv2:enabled
     ] .
+
+# Port groups. MOD lists groups by lv2:index (else alphabetically), then ports by index,
+# and an OS without group support uses port index alone: so the port order matches.
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_envelope>
+    a pg:InputGroup ;
+    lv2:index 0 ;
+    lv2:name "Envelope" ;
+    lv2:symbol "envelope" .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_pitch>
+    a pg:InputGroup ;
+    lv2:index 1 ;
+    lv2:name "Pitch" ;
+    lv2:symbol "pitch" .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_reverb>
+    a pg:InputGroup ;
+    lv2:index 2 ;
+    lv2:name "Reverb" ;
+    lv2:symbol "reverb" .
+
+<https://github.com/Kiwooky/NHE-Trance-Atlantic#portGroup_mix>
+    a pg:InputGroup ;
+    lv2:index 3 ;
+    lv2:name "Mix" ;
+    lv2:symbol "mix" .

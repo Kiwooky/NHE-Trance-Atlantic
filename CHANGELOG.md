@@ -5,6 +5,7 @@ Versions are MOD's plugin versions (lv2:minorVersion.microVersion).
 ## 2.7 (2026-10-17)
 
 - Five new factory presets: A Million Miles, Whale Call, Just drifting aimlessly, Converging streams, Bouncing of the Floor.
+- Settings panel: controls grouped as Envelope (Sense, Swim, Throat, Mode), Pitch (Song, Travel), Reverb (Depth, Scatter) and Mix (Blend, Tails). The ports are renumbered in that order, so the order holds on MOD OS versions without group support too; saved pedalboards and presets are unaffected (MOD saves controls by symbol).
 - Footswitch latches: the rest art while the effect runs, the pressed art while bypassed.
 - Pedal face: the orb layers stay on their own GPU layers, so the ripples no longer make the whole face flicker in brightness.
 

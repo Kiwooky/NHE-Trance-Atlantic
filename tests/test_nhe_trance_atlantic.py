@@ -11,7 +11,7 @@ from lv2test import Plugin, check, done, db, rms, centroid, pluck_train, tick_co
 sys.path.insert(0, HERE)
 from gtr import gtr_train   # harmonic plucks: a wah needs harmonics to work on
 
-ORDER = ['sense', 'song', 'swim', 'depth', 'scatter', 'throat', 'blend', 'travel', 'mode', 'tails', 'input_level', 'lv2_enabled']
+ORDER = ['sense', 'swim', 'throat', 'mode', 'song', 'travel', 'depth', 'scatter', 'blend', 'tails', 'input_level', 'lv2_enabled']
 DEF = dict(sense=50, song=5, swim=250, depth=35.83, scatter=80.71, throat=50, blend=76.77, travel=2, mode=2, tails=1, input_level=0, lv2_enabled=1)
 p = Plugin(order=ORDER, defaults=DEF, n_in=1, n_out=2)
 sr = 48000

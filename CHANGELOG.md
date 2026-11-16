@@ -2,6 +2,10 @@
 
 Versions are MOD's plugin versions (lv2:minorVersion.microVersion).
 
+## 2.8 (2026-11-11)
+
+- Preset names are now listed in `manifest.ttl` as well as `presets.ttl` (`rdfs:label`, as DPF writes them), so a host can show the names without opening the presets file. Same presets, same sound.
+
 ## 2.7 (2026-10-17)
 
 - Five new factory presets: A Million Miles, Whale Call, Just drifting aimlessly, Converging streams, Bouncing of the Floor.

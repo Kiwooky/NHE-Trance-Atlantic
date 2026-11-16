@@ -11,39 +11,47 @@
 <https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-trance-atlantic>
     a pset:Preset ;
     lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Trance Atlantic" ;
     rdfs:seeAlso <presets.ttl> .
 
 <https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-choral-reef>
     a pset:Preset ;
     lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Choral Reef" ;
     rdfs:seeAlso <presets.ttl> .
 
 <https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-deep-sea-detune>
     a pset:Preset ;
     lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Deep sea detune" ;
     rdfs:seeAlso <presets.ttl> .
 
 <https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-a-million-miles>
     a pset:Preset ;
     lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "A Million Miles" ;
     rdfs:seeAlso <presets.ttl> .
 
 <https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-whale-call>
     a pset:Preset ;
     lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Whale Call" ;
     rdfs:seeAlso <presets.ttl> .
 
 <https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-just-drifting-aimlessly>
     a pset:Preset ;
     lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Just drifting aimlessly" ;
     rdfs:seeAlso <presets.ttl> .
 
 <https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-converging-streams>
     a pset:Preset ;
     lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Converging streams" ;
     rdfs:seeAlso <presets.ttl> .
 
 <https://github.com/Kiwooky/NHE-Trance-Atlantic#preset-bouncing-of-the-floor>
     a pset:Preset ;
     lv2:appliesTo <https://github.com/Kiwooky/NHE-Trance-Atlantic> ;
+    rdfs:label "Bouncing of the Floor" ;
     rdfs:seeAlso <presets.ttl> .
